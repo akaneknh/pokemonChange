@@ -7,10 +7,12 @@ body {
 
 
 #container {
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 20px;
+  background-color: rgb(80, 132, 109);
 }
 
 #ball {
@@ -59,4 +61,5 @@ h2 {
   font-family: "DotGothic16", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #fff;
 }
