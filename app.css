@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  text-align: center;
+}
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+#ball {
+  width: 100px;
+  height: 100px;
+}
+
+#ball:hover {
+  cursor: pointer;
+  animation: purupuru 0.8s linear 0s 1;
+}
+
+@keyframes purupuru {
+  0% {
+    transform: scale(1.0, 1.0) translate(0%, 0%);
+  }
+
+  20% {
+    transform: scale(1.0, 1.06) translate(-5%, -4%) skew(6deg, 0deg);
+  }
+
+  50% {
+    transform: scale(1.0, 0.94) translate(5%, 4%) skew(-6deg, 0deg);
+  }
+
+  65% {
+    transform: scale(1.0, 1.03) translate(2%, -2%) skew(-3deg, 0deg);
+  }
+
+  80% {
+    transform: scale(1.0, 0.97) translate(-2%, 2%) skew(3deg, 0deg);
+  }
+
+  100% {
+    transform: scale(1.0, 1.0) translate(0%, 0%);
+  }
+}
+
+
+img {
+  width: 250px;
+  height: 250px;
+}
